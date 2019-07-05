@@ -1,0 +1,46 @@
+@import "colors";
+@import "overrides";
+
+.main-header {
+  width: 100%;
+  height: 198px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), $black-opacity-1), url("../images/header-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: -64px;
+
+  .header-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+
+
+  .site-slogan {
+    color: $white;
+    font-family: "Lato", sans-serif;
+    font-size: 2.813rem;
+    font-weight: 300;
+    display: block;
+    position: relative;
+    top: 98px;
+  }
+}
+
+nav {
+  .container {
+    position: relative;
+    height: 64px;
+  }
+}
+
+.filter-button {
+  background-color: $primary;
+  position: absolute;
+  right: 0;
+  bottom: -28px;
+}
